@@ -53,3 +53,21 @@ Stock.prototype.getTicker = function() {
 
 GOOG.getTicker === IBM.getTicker // true
 ```
+
+Inheritance
+-----------
+```js
+function Foo() = {
+	this.sayFoo = console.log("foo");
+}
+
+function Bar() = {
+	Foo.call(this);
+	this.sayBar = console.log("bar");
+}
+
+bar.prototype = new Foo();
+
+// This is better
+bar.prototype = Object.create(Foo.prototype);
+```
