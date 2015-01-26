@@ -1,3 +1,4 @@
+```js
 /**
 * provides a global access to one and only one 
 * instance of an object.
@@ -21,6 +22,7 @@ var Singleton = (function() {
 		}
 	};
 });
+```
 
 
 

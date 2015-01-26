@@ -1,4 +1,4 @@
-'''js
+```js
 function Person(name) {
 	this.name = name;
 }
@@ -43,4 +43,4 @@ function extend(target) {
 		}
 	}
 }
-'''
+```
